@@ -1,0 +1,50 @@
+@startuml LibraryManagementSystemClassDiagram
+skinparam classAttributeIconSize 0
+
+class Library {
+    - books : List<Book>
+    - members : List<Member>
+    + addBook(book : Book) : void
+    + removeBook(bookId : String) : void
+    + searchBooks(query : String) : List<Book>
+    + registerMember(member : Member) : void
+    + viewMemberDetails(memberId : String) : Member
+}
+
+class Book {
+    - bookId : String
+    - title : String
+    - author : String
+    - publisher : String
+    - isIssued : Boolean
+    + issue() : void
+    + returnBook() : void
+}
+
+class Member {
+    - memberId : String
+    - name : String
+    - contactDetails : String
+    + searchBooks(query : String) : List<Book>
+    + issueBook(book : Book) : void
+    + returnBook(book : Book) : void
+}
+
+class Librarian {
+    - employeeId : String
+    - name : String
+    + addBook(book : Book) : void
+    + removeBook(bookId : String) : void
+    + issueBook(book : Book, member : Member) : void
+    + returnBook(book : Book, member : Member) : void
+    + registerMember(member : Member) : void
+    + viewMemberDetails(memberId : String) : Member
+}
+
+Library "1" *-- "many" Book
+Library "1" *-- "many" Member
+Member "1" --> "many" Book : issues
+Librarian "1" --> "many" Book : manages
+Librarian "1" --> "many" Member : manages
+
+@enduml
