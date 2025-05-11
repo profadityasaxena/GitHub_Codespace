@@ -18,4 +18,20 @@ GitHub Codespaces provides a cloud-based development environment that is pre-con
 
 4. **Collaborate and Contribute**: Work collaboratively with your team by sharing your codespace or committing your changes to the repository. Use GitHub's pull request workflow to review and merge contributions.
 
+## Generated UML Diagrams
+
+Below are the UML diagrams generated for the **Library Management System**:
+
+### Use Case Diagram
+![Use Case Diagram](./diagrams/use_case_diagram.png)
+
+### Class Diagram
+![Class Diagram](./diagrams/class_diagram.png)
+
+### Sequence Diagram
+![Sequence Diagram](./diagrams/sequence_diagram.png)
+
+### Activity Diagram
+![Activity Diagram](./diagrams/activity_diagram.png)
+
 Stay tuned for updates and contributions as we build this project collaboratively!
