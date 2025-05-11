@@ -1,0 +1,40 @@
+@startuml LibraryManagementSystemInteraction
+
+actor "Librarian" as librarian
+actor "Member" as member
+
+participant "Library System" as system
+
+== Add Books ==
+librarian -> system : Add book details
+system -> librarian : Confirm book addition
+
+== Remove Books ==
+librarian -> system : Remove book details
+system -> librarian : Confirm book removal
+
+== Issue Books ==
+librarian -> system : Check book availability
+system -> librarian : Book available
+librarian -> system : Issue book to member
+system -> librarian : Confirm book issue
+librarian -> member : Provide issued book
+
+== Return Books ==
+member -> librarian : Return book
+librarian -> system : Update book status
+system -> librarian : Confirm book return
+
+== Search Books ==
+member -> system : Search for books
+system -> member : Display search results
+
+== Register Member ==
+librarian -> system : Add member details
+system -> librarian : Confirm member registration
+
+== View Member Details ==
+librarian -> system : Retrieve member details
+system -> librarian : Display member details
+
+@enduml
