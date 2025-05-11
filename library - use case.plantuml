@@ -1,0 +1,29 @@
+@startuml LibraryManagementSystemDiagram
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Librarian" as librarian
+actor "Member" as member
+
+rectangle LibraryManagementSystem {
+    usecase "Add Books" as UC1
+    usecase "Remove Books" as UC2
+    usecase "Issue Books" as UC3
+    usecase "Return Books" as UC4
+    usecase "Search Books" as UC5
+    usecase "Register Member" as UC6
+    usecase "View Member Details" as UC7
+}
+
+librarian --> UC1
+librarian --> UC2
+librarian --> UC3
+librarian --> UC4
+librarian --> UC6
+librarian --> UC7
+
+member --> UC3
+member --> UC4
+member --> UC5
+
+@enduml
