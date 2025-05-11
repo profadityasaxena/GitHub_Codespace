@@ -23,15 +23,13 @@ GitHub Codespaces provides a cloud-based development environment that is pre-con
 Below are the UML diagrams generated for the **Library Management System**:
 
 ### Use Case Diagram
-![Use Case Diagram](./diagrams/use_case_diagram.png)
+![Use Case Diagram](./out/library%20-%20use%20case/LibraryManagementSystemDiagram.svg)
 
 ### Class Diagram
-![Class Diagram](./diagrams/class_diagram.png)
+![Class Diagram](./out/library%20-%20class%20diagram/LibraryManagementSystemClassDiagram.svg)
 
-### Sequence Diagram
-![Sequence Diagram](./diagrams/sequence_diagram.png)
+### Interaction Diagram
+![Sequence Diagram](./out/library%20-%20interaction%20diagram/LibraryManagementSystemInteraction.svg)
 
-### Activity Diagram
-![Activity Diagram](./diagrams/activity_diagram.png)
 
 Stay tuned for updates and contributions as we build this project collaboratively!
